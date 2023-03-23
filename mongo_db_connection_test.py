@@ -11,7 +11,7 @@ server = SSHTunnelForwarder(
     MONGO_HOST,
     ssh_username = MONGO_USER,
     ssh_password = MONGO_PASS,
-    remote_bind_address = ('127,0,0,1', 22)
+    remote_bind_address = ('127.0.0.1', 22)
     )
     
 server.start()
